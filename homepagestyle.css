@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #450920;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-logo {
+  width: 120px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f9dbbd;
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 70%;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: #da627d;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a53860;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+.blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #da627d;
+  z-index: -100;
+}
+
+header {
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+header .content h4 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+header .content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+header .content h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+header .content p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+header .image {
+  position: relative;
+}
+
+header .image::before {
+  top: 0;
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 38rem;
+  font-weight: 400;
+  line-height: 28rem;
+  color: #da627d;
+  opacity: 0.2;
+  z-index: -100;
+}
+
+header .image img {
+  max-width: 600px;
+  margin: auto;
+}
+
+section .header {
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.features {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.features .card {
+  background-color: #da627d;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.features .card:hover {
+  border-color: #ffa69e;
+  border-color: #fff;
+}
+
+.features .card span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  background-color: #fcbcb8;
+  padding: 2px 9px;
+  font-size: 1.75rem;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.features .card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.features .card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.features .card a {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.features .card a:hover {
+  color: #fcb9b2;
+}
+
+.sub-header {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+}
+
+.pricing {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.pricing .card {
+  padding: 3rem 2rem;
+  background-color: #efa7a7;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.pricing .card:hover {
+  color: #bf4342;
+  border-color: #ffffff;
+}
+
+.pricing .card .content {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.pricing .card h4 {
+  margin-bottom: 1rem;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.pricing .card h3 {
+  color: #000000;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 1px dashed #000000;
+}
+
+.pricing .card p {
+  color: #000000;
+  margin-bottom: 0.75rem;
+}
+
+.pricing .card p i {
+  color: #000000;
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+.pricing .card button {
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.pricing .card button:hover {
+  background-color: #fcb9b2;
+  border-color: #450920;
+  color: #121212;
+}
+
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+}
+
+footer .column .logo {
+  max-width: 100px;
+  margin-bottom: 2rem;
+}
+
+footer .column p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+footer .column h4 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer .column .socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer .column .socials a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover {
+  background-color: #ccc;
+  color: #450920;
+  border-color: #a53860;
+}
+
+footer .column .socials h4 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+footer .column > a {
+  display: block;
+  color: #ccc;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+footer .column > a:hover {
+  color: #da627d;
+}
+
+.copyright {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+@media (width < 900px) {
+  .nav-links {
+    display: none;
+  }
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  header .image {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+@media (width < 600px) {
+  header .image::before {
+    display: none;
+  }
+
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pricing {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer {
+    grid-template-columns: 1fr 150px;
+  }
+}
